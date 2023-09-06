@@ -1,0 +1,17 @@
+.loginForm {
+    height: 350px;
+    width: 350px;
+    border: solid black 2px;
+    padding: 40px 30px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: lightgray;
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.changeForm {
+    color: blue;
+    cursor: pointer;
+}

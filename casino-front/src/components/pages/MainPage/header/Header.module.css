@@ -1,0 +1,95 @@
+header {
+    background-color:#f3f5fc;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 40px;
+    font-weight: 600;
+}
+
+
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.leftSideBox {
+    display: flex;
+    align-items: center;
+}
+
+.leftSideBox span {
+    margin-left: 30px;
+    font-size: 23px;
+    cursor: pointer;
+    position: relative;
+}
+
+.leftSideBox span:hover {
+    color: rgb(41, 41, 255);
+    
+}
+
+
+
+.selected::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: blue;
+    transform: scaleX(0.5);
+    opacity: 0;
+    border-radius: 4px;
+    transform: scaleX(1);
+    opacity: 1;
+}
+
+.rightSideBox {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.loginButton {
+    border: solid #ffc400 2px;
+    padding: 5px 20px;
+    min-width: 110px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-weight: 600;
+    display: none;
+}
+
+.loginButton:hover {
+    border: solid #ecb706 2px;
+    background-color: #fffae9;
+}
+
+.loginButton.active {
+    display: inline-block;
+}
+
+.regButton {
+    border: solid #ffc400 2px;
+    background-color: #ffc400;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 600;
+    display: none;
+}
+
+.regButton:hover {
+    border: solid #ecb706 2px;
+    background-color: #ecb706;
+}
+
+.regButton.active {
+    display: inline-block;
+}
+
